@@ -8,9 +8,10 @@ trait GoogleTranslate extends Logging {
 
   import net.liftweb.json.JsonParser._
 
-  val baseUrl = "http://ajax.googleapis.com/ajax/services/language/"
-  val detectUrl = baseUrl + "detect?v=1.0&q="
-  val translateUrl = baseUrl + "translate?v=1.0&q="
+  val apiKey = "AIzaSyBcy_kbe8kZg2OTJreo-v59tIwyIdrz0zI"
+  val baseUrl = "http://ajax.googleapis.com/ajax/services/language/%s?%s&v=1.0&q="
+  val detectUrl = baseUrl.format("detect", apiKey)
+  val translateUrl = baseUrl.format("translate", apiKey)
   val http = new Http
 
   implicit val formats = net.liftweb.json.DefaultFormats
@@ -25,10 +26,10 @@ trait GoogleTranslate extends Logging {
     translated.replace("# ", "#").replace("@ ", "@")
   }
 
-  def identifyLang(text: String): Option[String] = {
-    val lang = extractJsonField(detectUrl + Helpers.urlEncode(text), "language").getOrElse(return None)
+  def identifyLang(text: String): String = {
+    val lang = extractJsonField(detectUrl + Helpers.urlEncode(text), "language").getOrElse("en")
     debug("""Identified language {}, from "{}"""", lang, text)
-    Some(lang)
+    lang
   }
 
   private def extractJsonField(url: String, field: String): Option[String] = {
@@ -38,6 +39,7 @@ trait GoogleTranslate extends Logging {
     if (status == "200") {
       Some((parsed \\ field).extract[String])
     } else {
+      warn("Failed {}: {}, url {}", status, (parsed \\ "responseDetails").extract[String], url)
       None
     }
   }

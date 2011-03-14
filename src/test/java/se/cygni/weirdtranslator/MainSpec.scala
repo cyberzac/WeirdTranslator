@@ -3,10 +3,10 @@ package se.cygni.weirdtranslator
 import org.specs.Specification
 
 
-class MainTest extends Specification {
+class MainSpec extends Specification {
 
-  "extractUserDomain for input foo" should {
-    val (user, domain) = Main.extractUserDomain("foo")
+  "extractUserAndDomain for input foo" should {
+    val (user, domain) = Main.extractUserAndDomain("foo")
     "return user foo@gmail.com" in {
       user must_== ("foo@gmail.com")
     }
@@ -15,8 +15,8 @@ class MainTest extends Specification {
     }
   }
 
-  "extractUserDomain for input foo@bar" should {
-    val (user, domain) = Main.extractUserDomain("foo@bar")
+  "extractUserAndDomain for input foo@bar" should {
+    val (user, domain) = Main.extractUserAndDomain("foo@bar")
     "return user foo@bar" in {
       user must_== ("foo@bar")
     }
@@ -24,4 +24,5 @@ class MainTest extends Specification {
       domain must_== ("bar")
     }
   }
+
 }

@@ -5,15 +5,18 @@ import org.apache.camel.impl.DefaultCamelContext
 
 object Main extends XmppRouteBuilder {
 
-  val xmppAddressTemplate = "talk.google.com:5222/%s?serviceName=%s&user=weirdtranslator@gmail.com&password=drag-ham"
+  val xmppAddressTemplate = "talk.google.com:5222/%s?serviceName=%s&user=%s&password=%s"
 
   def main(args: Array[String]) = {
-    if (args.length == 0) {
-      println("Must give gtalk user to talk to")
+    if (args.length != 3) {
+      println("Usage:  toUser fromUser password")
+      exit
     }
 
-    val (user, domain) = extractUserDomain(args(0))
-    val xmppAddress = xmppAddressTemplate.format(user, domain)
+    val (to, domain) = extractUserAndDomain(args(0))
+    val (from, _) = extractUserAndDomain(args(1))
+    val password = args(2)
+    val xmppAddress = xmppAddressTemplate.format(to, domain, from, password)
 
     val context = new DefaultCamelContext()
     context.addRoutes(createRouteBuilder(xmppAddress))
@@ -23,13 +26,12 @@ object Main extends XmppRouteBuilder {
     }
   }
 
-  def extractUserDomain(arg: String): (String, String) = {
+  def extractUserAndDomain(arg: String): (String, String) = {
     val defaultDomain = "gmail.com"
     arg.split("@") match {
-      case Array(user) =>  (user + "@" + defaultDomain, defaultDomain)
+      case Array(user) => (user + "@" + defaultDomain, defaultDomain)
       case Array(user, domain) => (arg, domain)
     }
   }
-
 
 }
