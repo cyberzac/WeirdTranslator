@@ -3,3 +3,5 @@
 out/
 target/
 project/boot/
+lib/
+lib_managed/

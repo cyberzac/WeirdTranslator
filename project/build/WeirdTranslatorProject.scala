@@ -23,8 +23,5 @@ class Project(info: ProjectInfo) extends DefaultProject(info) {
   val lift_json = "net.liftweb" % "lift-json_2.8.0" % lift_version
   val lift_util = "net.liftweb" % "lift-util_2.8.0" % lift_version
 
-
-/*
-  val slf4j_log4j14 = "org.slf4j" % "slf4j-log4j12" % slf4j_version
-      */
+  val specs = "org.scala-tools.testing" % "specs_2.8.1" % "1.6.7" % "test"
 }
