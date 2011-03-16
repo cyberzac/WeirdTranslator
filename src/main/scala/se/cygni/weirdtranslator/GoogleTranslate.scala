@@ -11,7 +11,7 @@ trait GoogleTranslate extends Logging {
   val apiKey = "AIzaSyBcy_kbe8kZg2OTJreo-v59tIwyIdrz0zI"
   val baseUrl = "http://ajax.googleapis.com/ajax/services/language/%s?%s&v=1.0&q="
   val detectUrl = baseUrl.format("detect", apiKey)
-  val translateUrl = baseUrl.format("translate", apiKey)
+  val translateUrl = baseUrl.format("translate", apiKey)+"%s&langpair=%s%%7C%s"
   val http = new Http
 
   implicit val formats = net.liftweb.json.DefaultFormats
@@ -19,9 +19,9 @@ trait GoogleTranslate extends Logging {
   def translateText(text: String, fromTo: Pair[String, String]): String = {
     if (text.isEmpty) return ""
     val (from, to) = fromTo
-    val url = translateUrl + Helpers.urlEncode(text) + "&langpair=" + from + "%7C" + to
+    val url = translateUrl.format(Helpers.urlEncode(text),  from,  to)
     val translated = extractJsonField(url, "translatedText").getOrElse(return "")
-    debug("Translating from {} -> {} =>  {}", from, to, translated)
+    debug("Translated from {} -> {} =>  {}", from, to, translated)
     // Note that Google inserts a space after a # and a @
     translated.replace("# ", "#").replace("@ ", "@")
   }

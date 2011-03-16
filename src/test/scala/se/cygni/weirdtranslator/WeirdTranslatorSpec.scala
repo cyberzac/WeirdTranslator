@@ -1,12 +1,13 @@
 package se.cygni.weirdtranslator
 
 import org.specs.Specification
+import se.cygni.weirdtranslator.WeirdTranslator
 
 
 class WeirdTranslatorSpec extends Specification {
 
   "createLanguagesPairs" should {
-    val dut = new WeirdTranslator
+    val dut =  WeirdTranslator
 
     "return an empty list for sv, list()" in {
       val pairs = dut.createLanguagePairs("sv", List.empty)

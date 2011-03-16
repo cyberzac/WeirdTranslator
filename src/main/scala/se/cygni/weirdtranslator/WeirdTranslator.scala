@@ -1,30 +1,45 @@
 package se.cygni.weirdtranslator
 
 import org.apache.camel.{Handler, Body}
-class WeirdTranslator extends GoogleTranslate with Logging {
+
+object WeirdTranslator extends GoogleTranslate with Logging {
 
   val languages = List("it", "pl", "de", "fr", "es")
 
+
+
   @Handler
-  def translateWeird(@Body text: String): String = {
-    val lang = identifyLang(text)
-    val translatePairs = createLanguagePairs(lang, languages)
-    val translated = translatePairs.foldLeft(text)(translateText(_, _))
-    debug("""Translated "%s" -> "%s" """.format(text, translated))
-    translated
+  def translateOneStep(@Body text:String): String = {
+    if (text == null || text.isEmpty) return null
+    val translatePairs = createLanguagePairs(text, languages)
+    translatePairs.foldLeft(text)((t, p) => translateText(t, p))
   }
 
-  def createLanguagePairs(first: String, languages: List[String]): List[(String, String)] = {
+  def translateIntermediates(text: String): Array[String] = {
 
-   def pair2 (first:String, tail:List[String]): List[(String, String)] =  tail match {
-     case Nil => Nil
-     case head :: tail =>  (first, head) :: pair2(head, tail)
-   }
+    def translate(text: String, l: List[Pair[String, String]]): List[String] = l match {
+      case Nil => Nil
+      case head :: tail => {
+        val translation = translateText(text, head)
+        "%s (%s)".format(translation, head._2) :: translate(translation, tail)
+      }
+    }
+    if (text == null || text.isEmpty) return Array()
+    val translatePairs = createLanguagePairs(text, languages)
+    translate(text, translatePairs).toArray
+  }
 
-  languages  match {
-     case Nil => List.empty[(String, String)]
-     case list => pair2(first, list :+ first)
-   }
+  def createLanguagePairs(text: String, languages: List[String]): List[(String, String)] = {
+    def pairs(first: String, tail: List[String]): List[(String, String)] = tail match {
+      case Nil => Nil
+      case head :: tail => (first, head) :: pairs(head, tail)
+    }
+
+    val first = identifyLang(text)
+    languages match {
+      case Nil => List.empty[(String, String)]
+      case list => pairs(first, list :+ first)
+    }
 
   }
 
