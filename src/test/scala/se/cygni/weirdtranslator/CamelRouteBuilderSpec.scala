@@ -2,7 +2,7 @@ package se.cygni.weirdtranslator
 
 import org.specs.Specification
 
-class XmppRouteBuilderSpec extends Specification with XmppRouteBuilder {
+class CamelRouteBuilderSpec extends Specification with CamelRouteBuilder {
 
        "showIntermediates" should {
 

@@ -3,7 +3,7 @@ package se.cygni.weirdtranslator
 import org.apache.camel.impl.DefaultCamelContext
 
 
-object Main extends XmppRouteBuilder {
+object Main extends CamelRouteBuilder {
 
   val xmppAddressTemplate = "talk.google.com:5222/%s?serviceName=%s&user=%s&password=%s"
 

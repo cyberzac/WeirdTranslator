@@ -1,8 +1,6 @@
 package se.cygni.weirdtranslator
 
 import org.specs.Specification
-import se.cygni.weirdtranslator.WeirdTranslator
-
 
 class WeirdTranslatorSpec extends Specification {
 
