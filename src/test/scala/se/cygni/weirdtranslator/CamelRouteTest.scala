@@ -38,17 +38,6 @@ class CamelRouteTest extends CamelTestSupport with CamelRouteBuilder with JUnitS
     resultEndpoint.assertIsSatisfied
   }
 
-
-  @Test
-  def intermediateChainedRoute {
-    val message = "*Welcome"
-    val expected = Array("Hej", "Welcome")
-    mockitoMocker.when(intermediateChainedTranslator.translate(message)).thenReturn(expected)
-    resultEndpoint.expectedBodiesReceived(expected(0), expected(1))
-    producerTemplate.sendBody(message)
-    resultEndpoint.assertIsSatisfied
-  }
-
   def createBuilder = new ScalaRouteBuilder {
     "direct:start" --> "seda:in"
      "seda:out" --> "mock:result"

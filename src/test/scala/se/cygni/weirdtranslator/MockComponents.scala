@@ -10,13 +10,11 @@ trait TestEnvironment extends ChainedTranslatorComponent with TranslatorComponen
 
 
   val chainedTranslator =  mock[ChainedTranslator]
-  val intermediateChainedTranslator  =  mock[IntermediateChainedTranslator]
   val translator = mock[Translator]
   val mockitoMocker = new MockitoMocker
 }
 
 trait SpecEnvironment extends ChainedTranslatorComponent with TranslatorComponent with Mockito{
   val chainedTranslator = mock[ChainedTranslator]
-  val intermediateChainedTranslator  = mock[IntermediateChainedTranslator]
   val translator = mock[Translator]
 }
