@@ -1,535 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
-      <component name="FacetManager">
-        <facet type="scala" name="Scala">
-          <configuration>
-            <option value="Project" name="compilerLibraryLevel"></option>
-            <option value="buildScala" name="compilerLibraryName"></option>
-          </configuration>
-        </facet>
-        
-      </component>
-      <component inherit-compiler-output="false" name="NewModuleRootManager">
-        <output url="file://$MODULE_DIR$/target/scala_2.8.1/classes"></output><output-test url="file://$MODULE_DIR$/target/scala_2.8.1/test-classes"></output-test>
-        <exclude-output></exclude-output>
-        <content url="file://$MODULE_DIR$">
-          <sourceFolder isTestSource="false" url="file://$MODULE_DIR$/src/main/java"></sourceFolder><sourceFolder isTestSource="false" url="file://$MODULE_DIR$/src/main/scala"></sourceFolder><sourceFolder isTestSource="true" url="file://$MODULE_DIR$/src/test/java"></sourceFolder><sourceFolder isTestSource="true" url="file://$MODULE_DIR$/src/test/scala"></sourceFolder>
-          <sourceFolder isTestSource="false" url="file://$MODULE_DIR$/src/main/resources"></sourceFolder>
-          
-          
-          <excludeFolder url="file://$MODULE_DIR$/target"></excludeFolder>
-        </content>
-        <orderEntry exported=" " type="module-library">
+  <component name="FacetManager">
+    <facet type="scala" name="Scala">
+      <configuration>
+        <option name="compilerLibraryLevel" value="Project" />
+        <option name="compilerLibraryName" value="buildScala" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/scala_2.8.1/classes" />
+    <output-test url="file://$MODULE_DIR$/target/scala_2.8.1/test-classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/scala" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/target/scala_2.8.1/resources"></root>
+          <root url="file://$MODULE_DIR$/target/scala_2.8.1/resources" />
         </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="buildScala" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/logback-classic-0.9.27.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/spring-context-3.0.5.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/commons-codec-1.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/mail-1.4.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/mockito-all-1.8.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
         <SOURCES>
-          
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/mockito-all-1.8.5-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
-        <orderEntry type="inheritedJdk"></orderEntry>
-        <orderEntry type="sourceFolder" forTests="false"></orderEntry>
-        <orderEntry level="project" type="library" name="buildScala"></orderEntry>
-        
-        <orderEntry exported=" " type="module-library">
+    <orderEntry type="module-library" exported="" scope="TEST">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/logback-classic-0.9.27.jar!/"></root>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/commons-logging-api-1.1.jar!/" />
         </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
+        <JAVADOC />
+        <SOURCES />
       </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/commons-codec-1.4.jar!/"></root>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/lift-json_2.8.1-2.2.jar!/" />
         </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
+        <JAVADOC />
+        <SOURCES />
       </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
+    </orderEntry>
+    <orderEntry type="module-library" exported="" scope="TEST">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/spring-context-3.0.5.RELEASE.jar!/"></root>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/spring-core-3.0.5.RELEASE.jar!/" />
         </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
+        <JAVADOC />
+        <SOURCES />
       </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/mail-1.4.1.jar!/"></root>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/slf4j-api-1.6.1.jar!/" />
         </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
+        <JAVADOC />
+        <SOURCES />
       </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/commons-logging-api-1.1.jar!/"></root>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/smack-3.1.0.jar!/" />
         </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
+        <JAVADOC />
+        <SOURCES />
       </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/lift-json_2.8.1-2.2.jar!/"></root>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-core-2.6.0.jar!/" />
         </CLASSES>
         <JAVADOC>
-          
-          
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-core-2.6.0-javadoc.jar!/" />
         </JAVADOC>
         <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/spring-core-3.0.5.RELEASE.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/slf4j-api-1.6.1.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/smack-3.1.0.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/camel-core-2.6.0.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-core-2.6.0-javadoc.jar!/"></root>
-          
-        </JAVADOC>
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-core-2.6.0-sources.jar!/"></root>
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/logback-core-0.9.27.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/scalatest-1.3.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/scalatest-1.3-sources.jar!/"></root>
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/spring-aop-3.0.5.RELEASE.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/spring-beans-3.0.5.RELEASE.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/lift-common_2.8.1-2.2.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/dispatch-futures_2.8.1-0.7.8.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/httpclient-4.0.1.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/spring-asm-3.0.5.RELEASE.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/dispatch-http_2.8.1-0.7.8.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/dispatch-http_2.8.1-0.7.8-sources.jar!/"></root>
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-scala-2.6.0.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-scala-2.6.0-javadoc.jar!/"></root>
-          
-        </JAVADOC>
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-scala-2.6.0-sources.jar!/"></root>
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/spring-expression-3.0.5.RELEASE.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/specs_2.8.1-1.6.7.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/junit-4.8.2.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/junit-4.8.2-javadoc.jar!/"></root>
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/lift-actor_2.8.1-2.2.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/aopalliance-1.0.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/camel-spring-2.6.0.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/activation-1.1.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/paranamer-2.0.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/htmlparser-1.2.1.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/smackx-3.1.0.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/commons-management-1.0.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/spring-tx-3.0.5.RELEASE.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/commons-logging-1.1.1.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/lift-util_2.8.1-2.2.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/httpcore-4.0.1.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-xmpp-2.6.0.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-xmpp-2.6.0-javadoc.jar!/"></root>
-          
-        </JAVADOC>
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-xmpp-2.6.0-sources.jar!/"></root>
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry type="module-library" exported=" " scope="TEST">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/camel-test-2.6.0.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/camel-test-2.6.0-javadoc.jar!/"></root>
-          
-        </JAVADOC>
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/camel-test-2.6.0-sources.jar!/"></root>
-        </SOURCES>
-      </library>
-    </orderEntry><orderEntry exported=" " type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/joda-time-1.6.2.jar!/"></root>
-        </CLASSES>
-        <JAVADOC>
-          
-          
-        </JAVADOC>
-        <SOURCES>
-          
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-core-2.6.0-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
-      </component>
-    </module>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/logback-core-0.9.27.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/scalatest-1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/scalatest-1.3-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/spring-aop-3.0.5.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/spring-beans-3.0.5.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/lift-common_2.8.1-2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/dispatch-futures_2.8.1-0.7.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/httpclient-4.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/spring-asm-3.0.5.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/dispatch-http_2.8.1-0.7.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/dispatch-http_2.8.1-0.7.8-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-scala-2.6.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-scala-2.6.0-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-scala-2.6.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/spring-expression-3.0.5.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/specs_2.8.1-1.6.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/junit-4.8.2.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/junit-4.8.2-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/lift-actor_2.8.1-2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/aopalliance-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/camel-spring-2.6.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/activation-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/paranamer-2.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/htmlparser-1.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/spring-tx-3.0.5.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/commons-management-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/smackx-3.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/commons-logging-1.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/lift-util_2.8.1-2.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/httpcore-4.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-xmpp-2.6.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-xmpp-2.6.0-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/camel-xmpp-2.6.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/camel-test-2.6.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/camel-test-2.6.0-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/test/camel-test-2.6.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.1/compile/joda-time-1.6.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
+

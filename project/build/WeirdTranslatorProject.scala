@@ -24,6 +24,7 @@ class Project(info: ProjectInfo) extends DefaultProject(info) {
   val lift_util = "net.liftweb" % "lift-util_2.8.1" % lift_version
 
   val junit = "junit" % "junit" % "4.8.2" % "test"  withJavadoc()
+  val mockito = "org.mockito" % "mockito-all" % "1.8.5" % "test" withSources()
   val specs = "org.scala-tools.testing" % "specs_2.8.1" % "1.6.7" % "test"
   val scalaTest = "org.scalatest" % "scalatest" % "1.3" % "test" withSources()
   val camelTest = "org.apache.camel" % "camel-test" % camel_version % "test"  withSources() withJavadoc()

@@ -3,10 +3,10 @@ package se.cygni.weirdtranslator
 import org.apache.camel.scala.dsl.builder.{RouteBuilder => ScalaRouteBuilder}
 import org.apache.camel.{CamelContext, Exchange}
 
-trait CamelRouteBuilder extends Logging {
+trait CamelRouteBuilder extends Logging with ChainedTranslatorComponent {
 
   def bodyStartsWithStar(body: String): Boolean = {
-    val star = """^\*""".r
+    val star = "^\\*.*".r
     body match {
       case star() => true
       case _ => false
@@ -18,22 +18,26 @@ trait CamelRouteBuilder extends Logging {
     bodyStartsWithStar(body)
   }
 
-  val commonRouteBuilder = new ScalaRouteBuilder {
+  def commonRouteBuilder = new ScalaRouteBuilder {
     "seda:in" ==> {
-      as(classOf[String])
       choice {
-        when(showIntermediates) split (WeirdTranslator.translateIntermediates _) to ("seda:xmpp")
-        otherwise bean (WeirdTranslator)
+        when(showIntermediates) log ("Splitting") split (intermediateChainedTranslator.translate _) to ("seda:out")
+        otherwise log ("bean") bean (chainedTranslator) to ("seda:out")
       }
-    } --> "seda:xmpp"
-
+    }
+    /*
+      choice {
+        when(showIntermediates)  log("Splitting") split (intermediateChainedTranslator.translate) to("seda:out")
+        otherwise log("bean")  bean(chainedTranslator)  to("seda:out")
+      }
+      */
   }
 
   val xmppRouteBuilderRouteBuilder = (address: String) => new ScalaRouteBuilder {
     val xmpp = "xmpp://" + address
 
     xmpp --> "seda:in"
-    "seda:xmpp" --> xmpp
+    "seda:out" --> xmpp
   }
 
   def createRouteBuilder(xmppAddress: String): ScalaRouteBuilder = new ScalaRouteBuilder {
