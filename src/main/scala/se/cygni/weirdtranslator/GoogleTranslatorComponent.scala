@@ -20,12 +20,11 @@ trait GoogleTranslatorComponent extends TranslatorComponent {
 
     implicit val formats = net.liftweb.json.DefaultFormats
 
-    def translateText(text: String, fromTo: Pair[String, String]): String = {
+    def translateText(text: String, langPair: LanguagePair): String = {
       if (text.isEmpty) return ""
-      val (from, to) = fromTo
-      val url = translateUrl.format(Helpers.urlEncode(text), from, to)
+      val url = translateUrl.format(Helpers.urlEncode(text), langPair.from, langPair.to)
       val translated = extractJsonField(url, "translatedText").getOrElse(return "")
-      debug("Translated from {} -> {} =>  {}", from, to, translated)
+      debug("Translated from {} -> {} =>  {}", langPair.from, langPair.to, translated)
       // Note that Google inserts a space after a # and a @
       translated.replace("# ", "#").replace("@ ", "@")
     }

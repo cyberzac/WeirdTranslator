@@ -2,7 +2,6 @@ package se.cygni.weirdtranslator
 
 import org.scalatest.mock.MockitoSugar
 import org.mockito.MockitoMocker
-import org.specs.Specification
 import org.specs.mock.Mockito
 
 
