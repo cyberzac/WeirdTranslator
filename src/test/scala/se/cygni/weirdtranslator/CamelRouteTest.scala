@@ -18,7 +18,6 @@ class CamelRouteTest extends CamelTestSupport with CamelRouteBuilder with JUnitS
   def beforeTest: Unit = {
     setUp
     context.addRoutes(createBuilder) //Workaround since the super.createRouteBuilder returns a RouteBuilderFactory class
-    context.addRoutes(commonRouteBuilder)
     startCamelContext
   }
 
@@ -39,8 +38,7 @@ class CamelRouteTest extends CamelTestSupport with CamelRouteBuilder with JUnitS
   }
 
   def createBuilder = new ScalaRouteBuilder {
-    "direct:start" --> "seda:in"
-     "seda:out" --> "mock:result"
+    "direct:start" bean(chainedTranslator) to ("mock:result")
   }
 
 }

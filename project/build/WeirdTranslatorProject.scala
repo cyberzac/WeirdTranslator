@@ -11,6 +11,9 @@ class Project(info: ProjectInfo) extends DefaultProject(info) {
   val camelCore = "org.apache.camel" % "camel-core" % camel_version withSources () withJavadoc()
   val camelScala = "org.apache.camel" % "camel-scala" % camel_version withSources () withJavadoc()
   val camelXmpp = "org.apache.camel" % "camel-xmpp" % camel_version withSources () withJavadoc()
+  val camelMina = "org.apache.camel" % "camel-mina" % camel_version withSources () withJavadoc()
+
+
 
   val dispatch_version = "0.7.8"
   val dispatch =  "net.databinder" %% "dispatch-http" % dispatch_version withSources()

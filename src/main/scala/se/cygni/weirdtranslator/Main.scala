@@ -17,9 +17,10 @@ object Main extends CamelRouteBuilder with ChainedTranslatorComponentImpl with G
     val (from, _) = extractUserAndDomain(args(1))
     val password = args(2)
     val xmppAddress = xmppAddressTemplate.format(to, domain, from, password)
+    val minaPort = 6666
 
     val context = new DefaultCamelContext()
-    context.addRoutes(createRouteBuilder(xmppAddress))
+    context.addRoutes(createRouteBuilder(minaPort, xmppAddress))
     context.start
     while (true) {
       Thread.sleep(10);
