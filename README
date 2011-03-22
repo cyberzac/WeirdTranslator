@@ -1,1 +1,14 @@
-This file was created by IntelliJ IDEA 10.0.2 for binding GitHub repository
+The WeirdTranslator is an exercise in using Scala with Apache Camel.
+It will connect to  GTalk via XMPP as well as starting a socket server on
+port 6666. Then it will translate all incoming messages to italian, polish,
+german, french, spanish and then back to the original language.
+
+You need:
+*  Scala 2.8.1
+*  SBT
+
+To run you need to give three arguments the GTalk user, toUser,  to send messages
+to and the GTalk user, fromUser, and password to send messages from.
+When running you can either send messages from the GTalk toUser and
+have them translated. Or you can connect to the socket server on port 6666
+and type the messages directly.
